@@ -7,7 +7,8 @@
   "scripts": {
     "start": "pnpm exec eleventy --serve --port=7777",
     "remove": "rm -rf docs",
-    "deploy-subdomain": "pnpm exec eleventy --pathprefix=/cite-home/"
+    "deploy-subdomain": "pnpm exec eleventy --pathprefix=/cite-home/",
+    "deploy": "pnpm exec eleventy --pathprefix=/"
   },
   "keywords": [],
   "author": "",
