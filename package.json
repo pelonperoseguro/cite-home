@@ -1,0 +1,23 @@
+{
+  "name": "elevent-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "pnpm exec eleventy --serve --port=7777",
+    "remove": "rm -rf docs",
+    "deploy-subdomain": "pnpm exec eleventy --pathprefix=/cite-home/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "tailwindcss": "^3.4.14"
+  }
+}
