@@ -1,0 +1,54 @@
+{% macro cardblog(badge, title, datearticle, timearticle, description, image) %}
+<article
+  class="bg-black border border-[#d4af3715] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] transition-all group"
+>
+  <div class="h-48 bg-black relative overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform"
+      style="background-image: url('{{ image }}');"
+    ></div>
+    <div
+      class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-20"
+    ></div>
+    <span
+      class="absolute top-4 left-4 bg-[#d4af37] text-[#0a0f2b] px-3 py-1 rounded-full text-sm font-bold"
+      >{{ badge }}</span
+    >
+  </div>
+  <div class="p-6">
+    <div class="flex items-center text-gray-400 text-sm mb-3">
+      <span>{{ datearticle }}</span>
+      <span class="mx-2">•</span>
+      <span>{{ timearticle }}</span>
+    </div>
+    <h3
+      class="text-2xl font-cinzel text-white mb-3 group-hover:text-[#d4af37] transition-colors"
+    >
+      {{ title }}
+    </h3>
+    <p class="text-gray-300 mb-4">
+      {{ description }}
+    </p>
+    <a
+      href="#"
+      class="inline-flex items-center text-[#d4af37] text-sm font-medium group-hover:underline"
+    >
+      Descifrar conocimiento
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4 ml-1"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </a>
+  </div>
+</article>
+{% endmacro %}

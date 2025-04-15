@@ -1,0 +1,24 @@
+{% macro navigation(list) %}
+
+<!-- 2. 🌐 Navegación Sagrada (Menú de Servicios) -->
+<article
+  class="sticky top-0 z-50 backdrop-blur-md border-b border-[#d4af37]/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
+>
+  <div class="container px-6 mx-auto">
+    <div class="flex justify-center">
+      <!-- Contenedor de pestañas estilo códice -->
+      <nav class="flex" aria-label="Navegación Sagrada">
+        <div class="flex space-x-1">
+          {% from "ui/itemnavigation.njk" import itemnavigation %}
+          <!---->
+          {% for item in list %}
+          {{ itemnavigation(item.name, item.link) }}
+          {% endfor %}
+          <!---->
+        </div>
+      </nav>
+    </div>
+  </div>
+</article>
+
+{% endmacro %}

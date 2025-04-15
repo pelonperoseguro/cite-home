@@ -1,0 +1,77 @@
+<!-- Proyectos -->
+<section id="proyectos" class="py-24 px-6 relative overflow-hidden">
+  <!-- Decoración de fondo -->
+  <div class="absolute inset-0 opacity-5">
+    <div
+      class="absolute top-20 right-10 w-16 h-16 border border-antique-gold rotate-12 animate-float"
+    ></div>
+    <div
+      class="absolute bottom-1/4 left-1/4 w-20 h-20 border-2 border-antique-gold rounded-full animate-float-delay"
+    ></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <!-- Encabezado -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-cinzel text-antique-gold mb-4">
+        <span class="text-white">Crónicas de</span> Batallas Digitales
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Donde convertimos
+        <span class="text-antique-gold">amenazas en leyendas</span> y
+        <span class="text-antique-gold">código en artefactos invencibles</span>
+      </p>
+    </div>
+
+    <!-- Grid de Proyectos -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% from "ui/cardproyect.njk" import cardproyect %} {% for item in proyects
+      %}
+      {{
+        cardproyect(
+          item.title,
+          item.subtitle,
+          item.badge,
+          item.technologies,
+          item.image
+        )
+      }}
+      {% endfor %}
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <p class="text-gray-300 mb-6">
+        ¿Listo para escribir tu propia leyenda digital?
+      </p>
+      <a
+        href="#contacto"
+        class="inline-block bg-antique-gold text-[#0a0f2b] px-8 py-3 rounded font-medium hover:bg-[#c9a227] transition-colors"
+      >
+        Iniciar mi epopeya
+      </a>
+    </div>
+  </div>
+
+  <!-- Animaciones -->
+  <style>
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    .animate-float-delay {
+      animation: float 6s ease-in-out 3s infinite;
+    }
+    .font-cinzel {
+      font-family: "Cinzel", serif;
+    }
+  </style>
+</section>

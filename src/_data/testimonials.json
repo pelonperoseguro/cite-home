@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Carlos Mendoza",
+    "business": "FinTech MX",
+    "description": "El Escudo de David detuvo 3 ataques zero-day en nuestro primer mes. TKOTech transformó nuestra vulnerabilidad en fortaleza.",
+    "badge": "Certificado con Sello de Salomón",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "name": "Ana Lucía Ríos",
+    "business": "Salud Digital SA",
+    "description": "La Pócima SSL nos alertó de un ataque MITM antes que nuestro equipo de seguridad. ¡Invaluable para cumplir con HIPAA!",
+    "badge": "Verificado con Sangre Electrónica",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "name": "Roberto González",
+    "business": "E-Commerce Total",
+    "description": "El Alebrije Firewall aprendió patrones de ataque específicos de nuestro sector en 72 horas. Nada se le escapa.",
+    "badge": "Sellado en Blockchain",
+    "image": "https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+  }
+]

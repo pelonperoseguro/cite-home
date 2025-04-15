@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Santuario SSL",
+    "description": "Certificados de 7 capas con <span class=\"font-semibold text-[#d4af37]\">\"Pócima de Renovación Automática\"</span> que cambian de color ante amenazas.",
+    "list": [
+      "Encriptación AES-256 + TLS 1.3",
+      "Sellado holográfico para navegadores"
+    ],
+    "badge": "Invocar protección",
+    "icon": "lock",
+    "cardnumber": "1"
+  },
+  {
+    "title": "Escudo de David",
+    "description": "Framework React.js con <span class=\"font-semibold text-[#d4af37]\"> protección XSS/CSRF integrada</span> y sanitización automática de inputs.",
+    "list": [
+      "Componentes auto-blindados",
+      "Detección de inyecciones en tiempo real"
+    ],
+    "badge": "Forjar mi escudo",
+    "icon": "shield",
+    "cardnumber": "2"
+  },
+  {
+    "title": "Alebrije Firewall",
+    "description": "IA que aprende de ataques mexicanos y crea defensas <span class=\"font-semibold text-[#d4af37]\"> psicodélicamente efectivas</span>.",
+    "list": [
+      "Detección de patrones \"ChayanneFake\"",
+      "Actualización cada 6 horas (como reloj azteca)"
+    ],
+    "badge": "Activar guardian",
+    "icon": "telephone",
+    "cardnumber": "3"
+  },
+  {
+    "title": "Templo de Backups",
+    "description": "Copias de seguridad en <span class=\"font-semibold text-[#d4af37]\"> 3 pirámides digitales</span> (local, nube AWS y bóveda física).",
+    "list": [
+      "Cifrado con llaves de obsidiana",
+      "Restauración en 13 minutos (número sagrado)"
+    ],
+    "badge": "Resguardar conocimiento",
+    "icon": "temple",
+    "cardnumber": "4"
+  }
+]

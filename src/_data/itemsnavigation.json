@@ -1,0 +1,33 @@
+{
+  "home": [
+    {
+      "name": "servicios"
+    },
+    {
+      "name": "nosotros"
+    },
+    {
+      "name": "proyectos"
+    },
+    {
+      "name": "blog"
+    },
+    {
+      "name": "contacto"
+    }
+  ],
+  "web": [
+    {
+      "name": "inicio",
+      "link": "/"
+    },
+    {
+      "name": "servicios",
+      "link": "webservicios"
+    },
+    {
+      "name": "contacto",
+      "link": "webcontacto"
+    }
+  ]
+}

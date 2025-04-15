@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Fortaleza Bancaria",
+    "subtitle": "Sistema antifraude para banco mexicano que redujo ataques un 92%",
+    "badge": "FinTech",
+    "technologies": ["React", "Node.js", "AWS Shield"],
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "title": "Escudo del Comerciante",
+    "subtitle": "Plataforma segura para 200+ negocios tradicionales migrando a digital",
+    "badge": "E-commerce",
+    "technologies": ["Next.js", "Django", "Stripe"],
+    "image": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "title": "Templo de Historias Clínicas",
+    "subtitle": "Sistema HIPAA-compliant para red de hospitales privados",
+    "badge": "Salud",
+    "technologies": ["Flutter", "Ruby on Rails", "Encriptación AES-256"],
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+  }
+]

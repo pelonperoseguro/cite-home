@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-antique-gold: #d4af37;
+  --color-deep-blue: #0f2c59;
+  --color-obsidian-red: #8b0000;
+  @keyframes spotlight {
+    0% {
+      opacity: 0;
+      transform: "translate(-72%, -62%) scale(0.5)";
+    }
+    100% {
+      opacity: 1;
+      transform: "translate(-50%,-40%) scale(1)";
+    }
+  }
+}
+
+.solomon-seal {
+  transition: transform 0.5s ease;
+}
+
+.solomon-seal:hover {
+  transform: rotate(360deg) scale(1.1);
+}

@@ -1,0 +1,27 @@
+{% macro itemnavigation(title, link = "") %}
+<a
+  {% if link != "" %}
+    {% if link == "/" %}
+      href="{{ link }}"  
+    {% endif %}
+  href="#{{ link }}"
+  {% else %}
+  href="#{{ title }}"
+  {% endif %}
+  class="relative px-6 py-4 text-sm font-medium transition-all duration-300 group text-gray-300 hover:text-[#d4af37]"
+>
+  <div class="flex items-center">
+    <!-- Ícono alquímico -->
+    {# text-[#d4af37] modo activo #}
+    <span class="font-cinzel capitalize">
+      {{ title }}
+    </span>
+  </div>
+  {% if false %}
+  <!-- Indicador activo -->
+  <div
+    class="absolute bottom-0 left-0 right-0 h-1 bg-[#d4af37] rounded-t-full"
+  ></div>
+  {% endif %}
+</a>
+{% endmacro %}

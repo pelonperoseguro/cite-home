@@ -1,0 +1,124 @@
+{% macro cardservice(title, description, list, badge, icon,cardnumber) %}
+<div
+  class="relative flex flex-col justify-between p-8 border border-[#d4af37]/20 rounded-xl hover:border-[#d4af37]/40 transition-all group"
+>
+  <!---->
+  <div
+    class="absolute top-0 right-0 w-16 h-16 -mt-5 -mr-5 bg-[#d4af37] text-[#0a0f2b] flex items-center justify-center rounded-full text-2xl font-cinzel"
+  >
+    {% if cardnumber == 1 %} Ⅰ {% elif cardnumber == 2 %} Ⅱ {% elif cardnumber
+    == 3 %} Ⅲ {% else %} Ⅳ {% endif %}
+  </div>
+  <div class="mb-6 text-[#d4af37]">
+    {% if icon == "lock" %}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-12 h-12"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+      />
+    </svg>
+    {% elif icon == "shield" %}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-12 h-12"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+      />
+    </svg>
+    {% elif icon == "telephone" %}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-12 h-12"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+      />
+    </svg>
+    {% else %}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-12 h-12"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+      />
+    </svg>
+    {% endif %}
+  </div>
+  <!---->
+  <h3 class="mb-3 text-2xl font-bold text-white font-cinzel">
+    {{ title }}
+  </h3>
+  <p class="mb-4 text-gray-300">{{ description | safe }}</p>
+  <ul class="space-y-2 text-sm text-gray-400">
+    {% for item in list %}
+    <li class="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-4 h-4 mr-2 text-[#d4af37]"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
+      {{ item }}
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="mt-6">
+    <a
+      href="/#contacto"
+      class="inline-flex items-center text-sm font-semibold text-[#d4af37] group-hover:underline"
+    >
+      {{ badge }}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+{% endmacro %}
