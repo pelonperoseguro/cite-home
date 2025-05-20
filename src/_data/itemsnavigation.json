@@ -1,19 +1,24 @@
 {
   "home": [
     {
-      "name": "servicios"
+      "name": "servicios",
+      "link": "servicios"
     },
     {
-      "name": "nosotros"
+      "name": "nosotros",
+      "link": "nosotros"
     },
     {
-      "name": "proyectos"
+      "name": "proyectos",
+      "link": "proyectos"
     },
     {
-      "name": "blog"
+      "name": "blog",
+      "link": "blog"
     },
     {
-      "name": "contacto"
+      "name": "contacto",
+      "link": "contacto"
     }
   ],
   "web": [

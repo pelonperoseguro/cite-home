@@ -4,10 +4,10 @@
   <!-- Fondo geométrico animado -->
   <div class="absolute inset-0 opacity-10">
     <div
-      class="absolute top-1/4 left-1/4 w-48 h-48 border-2 border-[#d4af37] rounded-full animate-float"
+      class="absolute top-1/4 left-1/4 w-48 h-48 border-2 border-[#d4af37] rounded-full animate-p-float"
     ></div>
     <div
-      class="absolute bottom-1/3 right-1/4 w-32 h-32 border border-[#d4af37] rotate-45 animate-float-delay"
+      class="absolute bottom-1/3 right-1/4 w-32 h-32 border border-[#d4af37] rotate-45 animate-p-float-delay"
     ></div>
   </div>
 
@@ -70,26 +70,4 @@
       </p>
     </div>
   </div>
-
-  <!-- Efectos CSS personalizados -->
-  <style>
-    .font-cinzel {
-      font-family: "Cinzel", serif;
-    }
-    @keyframes float {
-      0%,
-      100% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-30px) rotate(5deg);
-      }
-    }
-    .animate-float {
-      animation: float 8s ease-in-out infinite;
-    }
-    .animate-float-delay {
-      animation: float 8s ease-in-out 2s infinite;
-    }
-  </style>
 </header>

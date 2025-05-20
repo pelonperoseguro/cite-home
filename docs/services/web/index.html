@@ -23,7 +23,10 @@
     <div class="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full
         bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div>
 </div>
-    <header><article class="relative overflow-hidden min-h-[70vh] flex items-center">
+    <header>
+      
+      <!---->
+      <article class="relative overflow-hidden min-h-[70vh] flex items-center">
   <!-- Fondo místico-tecnológico -->
   <section class="absolute inset-0 z-0">
     <div
@@ -135,7 +138,10 @@
     animation: float 6s ease-in-out infinite;
   }
 </style>
-</header>
+
+      <!---->
+      
+    </header>
     
     <!---->
     
@@ -227,7 +233,7 @@
       <i class="ti ti-arrow-narrow-up-dashed stroke-[3px] text-2xl"></i>
     </a>
 
-    <main class="grid grid-cols-1 min-h-screen w-full gap-y-10">
+    <main class="grid grid-cols-1 w-full gap-y-10">
       
 <!-- 3. ⚡ Sección de Servicios (Los Cuatro Pilares) -->
 <div class="py-20" id="webservicios">
@@ -1375,6 +1381,7 @@
 
       <!-- Paso 2 - Ofrenda -->
       <div
+        id="step2"
         class="relative p-8 border border-[#d4af37]/10 rounded-xl group opacity-50"
       >
         <div
@@ -1417,6 +1424,7 @@
 
       <!-- Paso 3 - Consagración -->
       <div
+        id="step3"
         class="relative p-8 border border-[#d4af37]/10 rounded-xl group opacity-30"
       >
         <div
@@ -1478,8 +1486,8 @@
     const nextStepBtn = document.getElementById("nextStep1");
     const progressBar = document.getElementById("ritualProgress");
     const progressText = document.getElementById("progressText");
-    const step2 = document.querySelectorAll(".relative")[1]; // Paso 2
-    const step3 = document.querySelectorAll(".relative")[2]; // Paso 3
+    const step2 = document.querySelector("#step2"); // Paso 2
+    const step3 = document.querySelector("#step3"); // Paso 3
 
     // Manejar selección de botones de diagnóstico
     diagnosticBtns.forEach((btn) => {
@@ -1601,11 +1609,7 @@
     });
   });
 </script>
-
-<!-- opcion 2 -->
-
-<!-- opcion 3 -->
-
+  
 
 <!-- 7. 📜 FAQ (Pergaminos del Conocimiento) -->
 <div class="py-20" id="webpreguntasyrespuestas">
@@ -1861,11 +1865,10 @@
         ¿Tu pregunta no está en los pergaminos?
       </h3>
       <p class="mb-6 text-gray-300">
-        El oráculo TKOTech responderá en menos de 13 minutos (número de la
-        suerte)
+        El oráculo TKOTech responderá en menos de 13 lunas (número de la suerte)
       </p>
       <a
-        href="#"
+        href="/#contacto"
         class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-[#0a0f2b] bg-[#d4af37] rounded-lg hover:bg-[#f1c954] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d4af37]"
       >
         Consultar al Oráculo
@@ -2032,7 +2035,7 @@
         </a>
 
         <a
-          href="#ritualdeproteccion"
+          href="#webcontacto"
           id="secondaryCta"
           class="px-8 py-4 text-lg font-bold text-white border-2 border-[#d4af37] rounded-lg hover:bg-[#d4af37]/10 transition-all opacity-0 translate-y-10"
         >
@@ -2170,6 +2173,7 @@
 
 
     </main>
+
     <footer class="relative border-t border-[#d4af3720]">
   <!-- Ola decorativa -->
 
@@ -2365,6 +2369,7 @@
     </div>
   </div>
 </footer>
+
 
     <script src="/js/script.js" type="module"></script>
   </body>

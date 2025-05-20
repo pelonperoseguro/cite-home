@@ -17,7 +17,21 @@
 
   <body id="home-top">
     {% include "background.njk" %}
-    <header>{% include "serviceswebhero.njk" %}</header>
+    <header>
+      {% if page.url == "/services/web/" %}
+      <!---->
+      {% include "serviceswebhero.njk" %}
+      <!---->
+      {% elif page.url == "/services/software/" %}
+      <!---->
+      {% include "servicesoftwarehero.njk" %}
+      <!---->
+      {% elif page.url == "/services/audit/" %}
+      <!---->
+      {% include "serviceaudithero.njk" %}
+      <!---->
+      {% endif %}
+    </header>
     {% from "navigation.njk" import navigation %}
     <!---->
     {{ navigation(itemsnavigation.web) }}
@@ -29,10 +43,12 @@
       <i class="ti ti-arrow-narrow-up-dashed stroke-[3px] text-2xl"></i>
     </a>
 
-    <main class="grid grid-cols-1 min-h-screen w-full gap-y-10">
+    <main class="grid grid-cols-1 w-full gap-y-10">
       {{ content | safe }}
     </main>
+
     {% include "footer.njk" %}
+
     <script src="/js/script.js" type="module"></script>
   </body>
 </html>
