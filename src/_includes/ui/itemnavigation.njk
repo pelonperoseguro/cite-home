@@ -4,7 +4,7 @@
     {% if link == "/" or link == "/services/web" or link == "/services/software" or link == "/services/audit" %}
       href="{{ link }}"
       {% else %}
-      href="#{{ link }}"
+      href="/#{{ link }}"
     {% endif %}
   {% else %}
     href="#{{ title }}"

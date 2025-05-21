@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="{{ keywords }}" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{ title }}</title>
+  </head>
+
+  <body id="home-top">
+    {% include "background.njk" %}
+    <!---->
+    {% from "navigation.njk" import navigation %}
+    {{ navigation(itemsnavigation.home) }}
+    <a
+      href="#home-top"
+      class="sticky top-[90vh] z-20 flex h-10 w-10 translate-x-[90vw] cursor-pointer items-center justify-center rounded-full border border-white/5 bg-emerald-100 text-black dark:bg-white/10 dark:text-white dark:hover:bg-white/40"
+    >
+      <i class="ti ti-arrow-narrow-up-dashed stroke-[3px] text-2xl"></i>
+    </a>
+    <main>
+      <article
+        class="max-w-5xl mx-auto px-32 py-20 mb-20 bg-[#121a363a] text-gray-300 font-sans relative overflow-hidden rounded-4xl"
+      >
+        <!-- Efecto de constelaciones doradas -->
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center"
+          ></div>
+        </div>
+        <!-- Fin del efecto de constelaciones doradas -->
+
+        {{ content | safe }}
+      </article>
+    </main>
+    {% include "footer.njk" %}
+    <script src="/js/script.js" type="module"></script>
+  </body>
+</html>

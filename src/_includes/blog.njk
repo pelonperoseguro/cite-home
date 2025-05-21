@@ -24,19 +24,24 @@
 
     <!-- Grid de Artículos -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-      {% from "ui/cardblog.njk" import cardblog %} {% for item in infoblog %}
+      {% from "ui/cardblog.njk" import cardblog %}
+      <!---->
+      {% for article in collections.web %}
+      <!---->
       {{
         cardblog(
-          item.badge,
-          item.title,
-          item.datearticle,
-          item.timearticle,
-          item.description,
-          item.image
+          article.url,
+          article.data.tags,
+          article.data.title,
+          article.data.datearticle,
+          article.data.timearticle,
+          article.data.description,
+          article.data.image
         )
       }}
-
+      <!---->
       {% endfor %}
+      <!---->
     </div>
 
     <!-- CTA -->

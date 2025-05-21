@@ -1,4 +1,5 @@
-{% macro cardblog(badge, title, datearticle, timearticle, description, image) %}
+{% macro cardblog(articleurl, badge, title, datearticle, timearticle,
+description, image) %}
 <article
   class="bg-black border border-[#d4af3715] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] transition-all group"
 >
@@ -10,11 +11,17 @@
     <div
       class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-20"
     ></div>
-    <span
-      class="absolute top-4 left-4 bg-[#d4af37] text-[#0a0f2b] px-3 py-1 rounded-full text-sm font-bold"
-      >{{ badge }}</span
-    >
+    <div class="absolute top-4 left-4 flex gap-1">
+      {% for item in badge %} {# class="absolute top-4 left-4 bg-[#d4af37]
+      text-[#0a0f2b] px-3 py-1 rounded-full text-sm font-bold" #}
+      <span
+        class="bg-[#d4af37] text-[#0a0f2b] px-3 py-1 rounded-full text-sm font-bold capitalize"
+        >{{ item }}</span
+      >
+      {% endfor %}
+    </div>
   </div>
+
   <div class="p-6">
     <div class="flex items-center text-gray-400 text-sm mb-3">
       <span>{{ datearticle }}</span>
@@ -30,7 +37,7 @@
       {{ description }}
     </p>
     <a
-      href="#"
+      href="{{ articleurl }}"
       class="inline-flex items-center text-[#d4af37] text-sm font-medium group-hover:underline"
     >
       Descifrar conocimiento
