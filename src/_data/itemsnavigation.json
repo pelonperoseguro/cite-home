@@ -1,38 +1,42 @@
 {
   "home": [
     {
-      "name": "servicios",
+      "name": "Servicios",
       "link": "servicios"
     },
     {
-      "name": "nosotros",
+      "name": "Nosotros",
       "link": "nosotros"
     },
     {
-      "name": "proyectos",
+      "name": "Proyectos",
       "link": "proyectos"
     },
     {
-      "name": "blog",
+      "name": "Blog",
       "link": "blog"
     },
     {
-      "name": "contacto",
+      "name": "Contacto",
       "link": "contacto"
     }
   ],
-  "web": [
+  "services": [
     {
-      "name": "inicio",
+      "name": "Inicio",
       "link": "/"
     },
     {
-      "name": "servicios",
-      "link": "webservicios"
+      "name": "Sitios Web",
+      "link": "/services/web"
     },
     {
-      "name": "contacto",
-      "link": "webcontacto"
+      "name": "Software",
+      "link": "/services/software"
+    },
+    {
+      "name": "Auditorias",
+      "link": "/services/audit"
     }
   ]
 }

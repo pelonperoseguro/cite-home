@@ -1,12 +1,13 @@
 {% macro itemnavigation(title, link = "") %}
 <a
   {% if link != "" %}
-    {% if link == "/" %}
-      href="{{ link }}"  
+    {% if link == "/" or link == "/services/web" or link == "/services/software" or link == "/services/audit" %}
+      href="{{ link }}"
+      {% else %}
+      href="#{{ link }}"
     {% endif %}
-  href="#{{ link }}"
   {% else %}
-  href="#{{ title }}"
+    href="#{{ title }}"
   {% endif %}
   class="relative px-6 py-4 text-sm font-medium transition-all duration-300 group text-gray-300 hover:text-[#d4af37]"
 >

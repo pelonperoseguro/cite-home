@@ -16,7 +16,9 @@
   </head>
 
   <body id="home-top">
-    {% include "background.njk" %}
+    {% include "background.njk" %} {% from "navigation.njk" import navigation %}
+    <!---->
+
     <header>
       {% if page.url == "/services/web/" %}
       <!---->
@@ -31,10 +33,8 @@
       {% include "serviceaudithero.njk" %}
       <!---->
       {% endif %}
+      {{ navigation(itemsnavigation.services) }}
     </header>
-    {% from "navigation.njk" import navigation %}
-    <!---->
-    {{ navigation(itemsnavigation.web) }}
 
     <a
       href="#home-top"
